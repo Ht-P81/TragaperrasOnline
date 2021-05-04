@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-----------------------------------Encabezado de la página (HEAD)----------------------------------->
+<head>
+  <meta charset="UTF-8">
+  <title>Tragaperras Ilerna Online</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-----------------------------------Encabezado del viewport (BODY)----------------------------------->
+  <header>
+    <h1 id="titulo">TRAGAPERRAS ONLINE</h1>
+  </header>
+
+  <!-------------------SECCIONES DONDE PONDREMOS LAS TRES VENTANAS------------------->
+  <section id="contenedor__ventanas">
+
+    <!--CASILLA 1-->
+    <div class="ventana1">
+      <div class="imagen">
+        <img id="cuadro1" src="aguacate.png">
+      </div>
+      <div class="reemplaza"></div>
+      <!--para cambiar imagenes-->
+    </div>
+
+    <!--CASILLA 2-->
+    <div class="ventana2">
+      <div class="imagen">
+        <img id="cuadro2" src="aguacate.png">
+      </div>
+      <div class="reemplaza"></div>
+      <!--para cambiar imagenes-->
+    </div>
+
+    <!--CASILLA 3-->
+    <div class="ventana3">
+      <div class="imagen">
+        <img id="cuadro3" src="aguacate.png">
+      </div>
+      <div class="reemplaza"></div>
+      <!--para cambiar imagenes-->
+    </div>
+  </section>
+
+  <!-------------------------SECCION INTRODUCIR MONEDAS------------------------->
+  <section id="contenedor__monedas">
+    <h4>Introduzca monedas:
+      <input type="text" class="input__introducido"  id="input-monedas">
+    </h4>
+    <div id="boton__monedas">Start</div>
+
+    <label class="mayor__edad">*Declaro que soy mayor de edad</label>
+    <input type="checkbox" class="checkbox" id="chck" valor= "true" required="true">
+  </section>
+
+
+  <!-------------------------SECCION JUGAR PREMIOS MONEDAS GASTADAS------------------------>
+  <section id="contenedor_botonTirar_monedas_acumulados" title="$">
+
+    <h4>Salir / Monedas: <span id="monedas__numero">0</span> </h4>
+    <div id="boton__tirar">Tira-Avance</div>
+    <h4>Premios acumulados: <span id="acumulado__numero">0</span> </h4>
+  </section>
+
+  <!--Etiqueta script que enlace con la funcionalidiad de javascript el documento creado scripts js-->
+  <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+
+/*-------------------------proporcionamos formato al cuerpo-------------------------*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}
+
+/*----------------------Cabecera de nuestra maquina tragaperras----------------------*/
+#titulo{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(185, 79, 30);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*---------------------------------Seccion Ventanas---------------------------------*/
+#contenedor__ventanas{
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: 5px solid #4d4d4d;
+    border-radius: 1em; /*Ponemos las puntas redondas al contenedor*/
+    background-color: rgb(185, 40, 30);
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    box-shadow: 10px 8px 10px 5px rgb(255, 196, 0);
+}
+
+.ventana1{
+    display:inline-block;
+    margin-right: 30px;
+    background-color: rgb(255, 196, 0);
+    border: 10px solid #4d4d4d; 
+    border-radius: 1em;
+}
+
+.ventana2{
+    display:inline-block;
+    margin-right: 30px;
+    background-color: rgb(255, 196, 0);
+    border: 10px solid #4d4d4d; 
+    border-radius: 1em;
+}
+
+.ventana3{
+    display:inline-block;
+    margin-right: 30px;
+    background-color: rgb(255, 196, 0);
+    border: 10px solid #4d4d4d; 
+    border-radius: 1em;
+}
+
+img{
+    padding: 10px;
+}
+
+/*------------------------------------SECCION MONEDAS------------------------------------*/
+#contenedor__monedas{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: 10px solid #4d4d4d;
+    border-radius: 1em; /*Ponemos las puntas redondas al contenedor*/
+    background-color: rgb(182, 103, 66);
+    box-shadow: 10px 8px 10px 5px rgb(255, 196, 0);
+}
+
+#boton__monedas{
+    width: 300px;
+    height: 80px;
+    color: aquamarine;
+    background-color: rgb(185, 40, 30);
+    display: flex; 
+    justify-content: center; /*centramos verticalmente el texto del elemento*/
+    align-items: center; /*centramos horizontalmente el texto del elemento*/
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer; /*El cursor se convierte en una mano para tirar*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 5px solid rgb(255, 196, 0);
+    border-radius: 1em; /*Ponemos las puntas redondas al boton*/
+}
+
+#boton__monedas:hover{
+    background-color: chartreuse;
+    color: darkgoldenrod;
+    box-shadow: 10px 8px 10px 5px darkgoldenrod;
+}
+
+.mayor__edad{
+    width: 300px;
+    height: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:rgb(255, 196, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox{
+    margin-right: 20px;
+}
+
+.input__introducido{
+    width: 300px;
+    height: 60px;
+    color: aquamarine;
+    background-color: rgb(185, 79, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center; /*centramos horizontalmente el texto del elemento*/
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer; /*El cursor se convierte en una mano para tirar*/
+    border: 5px solid rgb(255, 196, 0);
+    border-radius: 1em; /*Ponemos las puntas redondas al boton*/
+}
+
+/*--------------------SECCION JUGAR TIRAR PREMIOS ACUMULADOS--------------------*/
+#contenedor_botonTirar_monedas_acumulados{
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top:20px;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #4d4d4d;
+    border-radius: 1em; /*Ponemos las puntas redondas al contenedor*/
+    background-color: rgb(182, 103, 66);
+    padding-top:10px;
+    padding-bottom: 10px;
+    width: auto;
+    height: auto;
+    box-shadow: 10px 8px 10px 5px rgb(255, 196, 0);
+
+}
+
+#boton__tirar{
+    width: 400px;
+    height: 100px;
+    color: aquamarine;
+    background-color: rgb(185, 40, 30);
+    display: flex; /*con inline o block no permite dar formato*/
+    justify-content: center; /*centramos verticalmente el texto del elemento*/
+    align-items: center; /*centramos horizontalmente el texto del elemento*/
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer; /*El cursor se convierte en una mano para tirar*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 5px solid rgb(255, 196, 0);
+    border-radius: 1em; /*Ponemos las puntas redondas al boton*/
+}
+
+#boton__tirar:hover{
+    background-color: chartreuse;
+    color: darkgoldenrod;
+    box-shadow: 10px 8px 10px 5px darkgoldenrod;
+}
+
+#monedas__numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .8em;
+    color: aquamarine;
+}
+
+#acumulado__numero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .8em;
+    color: aquamarine;
+}
+
+h4{
+    display: flex;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: aquamarine;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.input__introducido:focus {
+    outline: none;
+}
